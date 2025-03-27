@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquery.css" />
+</head>
+
+<body>
+    <nav class="calculator" id="calculator">
+        <input type="text" autocomplete="off" class="textinput child" id="textinput" placeholder="0"/>
+        <div class="firstline child">
+            <button onclick="clearall()" class="clr" style="background-color: rgb(255, 0, 102)">CL</button>
+            <button onclick="del()" class="del" style="background-color: rgb(255, 0, 102)">DEL</button>
+            <button onclick="display('%')" style="background-color: rgb(255, 162, 0)">%</button>
+            <button onclick="display('/')" style="background-color: rgb(255, 162, 0)">/</button>
+        </div>
+        <div class="secondline child">
+            <button onclick="display('9')">9</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('*')" style="background-color: rgb(255, 162, 0)">
+                X
+            </button>
+        </div>
+        <div class="thirdline child">
+            <button onclick="display('6')">6</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('-')" style="background-color: rgb(255, 162, 0)">
+                -
+            </button>
+        </div>
+        <div class="fourthline child">
+            <button onclick="display('3')">3</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('+')" style="background-color: rgb(255, 162, 0)">
+                +
+            </button>
+        </div>
+        <div class="sixthline child">
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="calculation()" class="eql" style="background-color: rgb(255, 162, 0)">
+                =
+            </button>
+        </div>
+    </nav>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.2.1/math.js"></script>
+</body>
+
+</html>
